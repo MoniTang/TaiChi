@@ -17,13 +17,14 @@ let string = `
  **/
 #div1{
     border-radius: 50%;
-
 }
 /* 太极分阴阳
  * 具有黑白两色
  **/
 #div1{
-    background: linear-gradient(90deg, rgba(9, 0, 0, 1) 0%, rgba(0, 5, 6, 1) 50%, rgba(239, 239, 242, 1) 50%);
+    background: linear-gradient(90deg, rgba(9, 0, 0, 1) 0%,
+    rgba(0, 5, 6, 1) 50%, rgba(239, 239, 242, 1) 50%);
+    box-shadow:0 0 3px rgba(0,0,0,0.5);
     border:none;
 }
 /* 我们在细化一下 **/
@@ -41,14 +42,15 @@ let string = `
     }
     /* 加两个神秘的小球 **/
     #div1::before {      
-        background: radial-gradient(circle, rgba(239, 239, 242, 1) 19%, rgba(9, 0, 0, 1) 19%, rgba(0, 5, 6, 1) 19%);
+        background: radial-gradient(circle, rgba(239, 239, 242, 1) 19%, 
+        rgba(9, 0, 0, 1) 19%, rgba(0, 5, 6, 1) 19%);
         border:none;
     }
     #div1::after {
-        background: radial-gradient(circle, rgba(0, 5, 6, 1) 0%, rgba(9, 0, 0, 1) 19%, rgba(239, 239, 242, 1) 19%);
+        background: radial-gradient(circle, rgba(0, 5, 6, 1) 0%, 
+        rgba(9, 0, 0, 1) 19%, rgba(239, 239, 242, 1) 19%);
         border:none;
-    }
-`
+    }`
 let string2 = "";
 let n = 0;
 let step = () => {
