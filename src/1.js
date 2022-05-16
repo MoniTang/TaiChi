@@ -26,7 +26,7 @@ let string = `
     background: linear-gradient(90deg, rgba(9, 0, 0, 1) 0%, rgba(0, 5, 6, 1) 50%, rgba(239, 239, 242, 1) 50%);
     border:none;
 }
-/* 加两个神秘的小球 **/
+/* 我们在细化一下 **/
 #div1::before {
     width: 100px;
     height: 100px;
@@ -39,6 +39,7 @@ let string = `
     border-radius: 50%;
     background: rgba(239, 239, 242, 1);
     }
+    /* 加两个神秘的小球 **/
     #div1::before {      
         background: radial-gradient(circle, rgba(239, 239, 242, 1) 19%, rgba(9, 0, 0, 1) 19%, rgba(0, 5, 6, 1) 19%);
         border:none;
@@ -70,7 +71,7 @@ let step = () => {
             n += 1;
             step();
         }
-    }, 10);
+    }, 50);
 };
 
 step(); // 1=>2
